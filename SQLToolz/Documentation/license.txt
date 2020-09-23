@@ -1,0 +1,49 @@
+By using SQL Toolz you give your express agreement to the
+below copyright, license and disclaimer notice.
+
+SQL Toolz is not "public domain" software.
+
+SQL Toolz is distributed as "freeware", whose meaning is
+that although no charge is made for this present version,
+sole and exclusive copyright and ownership of SQL Toolz is
+retained by the author, Larry W. Stavinoha.
+
+Larry W. Stavinoha grants you, without charge, the right to
+reproduce, distribute and use this version of SQL Toolz on
+the express condition that you do not receive any payment,
+commercial benefit or other consideration for any such act,
+other than a nominal media charge, and that the wording of
+this copyright notice and disclaimer is not changed in any
+way within the documentation, software or other media.
+
+Larry W. Stavinoha grants you, without charge, the right to
+use the code contained within this software for educational
+or commercial purposes.  Larry W. Stavinoha grants you,
+without charge, the right to create derivative works based
+on SQL Toolz, as long as credit is given to the original
+author and as long as the name of the derivative is not SQL Toolz.
+
+You also acknowledge that SQL Toolz remains the
+intellectual property of Larry W. Stavinoha.
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT
+LIMITATION, ANY WARRANTY OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE. IN NO EVENT SHALL LARRY W. STAVINOHA
+BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OR
+INABILITY TO USE THE SOFTWARE, EVEN IF LARRY W. STAVINOHA
+HAS BEEN ADVISED OF THE LIKELIHOOD OF SUCH DAMAGES
+OCCURRING. LARRY W. STAVINOHA SHALL NOT BE LIABLE FOR ANY
+LOSS, DAMAGES OR COSTS, ARISING OUT OF, BUT NOT LIMITED TO,
+LOST PROFITS OR REVENUE, LOSS OF USE OF THE SOFTWARE, LOSS
+OF DATA OR EQUIPMENT, THE COSTS OF RECOVERING SOFTWARE, DATA
+OR EQUIPMENT, THE COST OF SUBSTITUTE SOFTWARE, DATA OR
+EQUIPMENT OR CLAIMS BY THIRD PARTIES, OR OTHER SIMILAR
+COSTS.
+
+The rights to modify SQL Toolz or employ its component parts
+in any other work are exclusively retained by Larry W.
+Stavinoha. You may not reverse-engineer, disassemble,
+modify, decompile or create derivative works of this
+product. You also acknowledge that SQL Toolz remains the
+intellectual property of Larry W. Stavinoha.

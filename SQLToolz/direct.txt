@@ -1,0 +1,33 @@
+" This file is used to store reserved words for direct execution
+" as opposed to a select statement.  Only lines beginning with '
+" (single quote) are read.  The first group of entries show
+" the commands which are hard coded in the application.  The second
+" group of entries are entries which have been added specifically
+" for this implementation.  Valid entries must be enclosed in single
+" quotes.  Entries must be made in a manner which will allow the
+" parser to identify them in the context of an sql statement.  In
+" most cases this can be done by including a space after the word.
+" This file is read at database login, so if you add a word to it,
+" you can just login to the database again to have it included.
+"
+" Hard Coded Entries
+"BEGIN TRAN...
+"COMMIT...
+"ROLLBACK...
+"INSERT "
+"UPDATE "
+"DELETE "
+"CREATE "
+"ALTER "
+"DROP "
+"USE "
+"SET "
+"SAVEPOINT"
+"ROLLBACK TO SAVEPOINT"
+"GRANT "
+"REVOKE "
+"TRUNCATE TABLE "
+"
+" New Entries
+'COMMENT '
+'CHECKPOINT'

@@ -1,0 +1,28 @@
+d           Display the day as a number without a leading zero (1 – 31).
+dd          Display the day as a number with a leading zero (01 – 31).
+ddd         Display the day as an abbreviation (Sun – Sat).
+dddd        Display the day as a full name (Sunday – Saturday).
+ddddd       Display the date as a complete date (including day, month, and year), in short date format.
+dddddd       Display the date as a complete date (including day, month, and year), in long date format.
+w           Display the day of the week as a number (1 for Sunday through 7 for Saturday).
+ww          Display the week of the year as a number (1 – 54).
+m           Display the month as a number without a leading zero (1 – 12).
+mm          Display the month as a number with a leading zero (01 – 12).
+mmm         Display the month as an abbreviation (Jan – Dec).
+mmmm        Display the month as a full month name (January – December).
+q           Display the quarter of the year as a number (1 – 4).
+y           Display the day of the year as a number (1 – 366).
+yy          Display the year as a 2-digit number (00 – 99).
+yyyy        Display the year as a 4-digit number (100 – 9999).
+
+h           Display the hour as a number without leading zeros (0 – 23).
+hh          Display the hour as a number with leading zeros (00 – 23).
+n           Display the minute as a number without leading zeros (0 – 59).
+nn          Display the minute as a number with leading zeros (00 – 59).
+s           Display the second as a number without leading zeros (0 – 59).
+ss          Display the second as a number with leading zeros (00 – 59).
+AM/PM       Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M.
+am/pm       Use the 12-hour clock and display a lowercase AM with any hour before noon; display a lowercase PM with any hour between noon and 11:59 P.M.
+A/P         Use the 12-hour clock and display an uppercase A with any hour before noon; display an uppercase P with any hour between noon and 11:59 P.M.
+a/p         Use the 12-hour clock and display a lowercase A with any hour before noon; display a lowercase P with any hour between noon and 11:59 P.M.
+AMPM        Use the 12-hour clock and display the AM string literal for your system with any hour before noon; display the PM string literal for your system with any hour between noon and 11:59 P.M. AMPM can be either uppercase or lowercase, but the case of the string displayed matches the setting for your system.

@@ -1,0 +1,267 @@
+SQL Toolz Revision History.
+
+v1.45  2002-08-30
+
+Fixed keyboard copy and paste on the Results Grid and the Schema Tree.
+
+Implemented a few more features and options in the editor.  These are on
+a new tab in the Options window.
+    Allow you to change the auto-indent type (none, previous line, or sql scope)
+    Higlight Current Line (puts a yellow highlight)
+    Restrict cursor to text (You can now un-restrict it)
+    Tab size
+    Convert tabs to spaces while typing
+    Print in Color
+    
+Added the current line and current column to the status bar.
+
+Added support for the Windows popup menu key in the Results Grid and 
+Schema Tree.
+
+Added ability to print contents of the Command Window.  This is pretty basic,
+and prints in fixed width 10 pt Courier New.  Option to print in color is
+also available on the Editor tab on the Options dialog.
+
+Added ability to make a backup .bak file on save.  The file extension is 
+replaced with a .bak extension.
+
+v1.42  2002-06-02
+
+Replaced editing control for the Command Window.  This is a big change
+that allows the command window to be more useful editing files, as opposed
+to just working with ad-hoc sql.  New features in the command window
+include:
+    Color syntax highlighting
+    Indentation based on previous line
+    Unlimited Undo and Redo
+    Find and Replace
+    Go To Line
+    Go To Matching Brace
+    Bookmarks
+    Tabs to Spaces
+    Spaces to Tabs
+    Show Tabs and Spaces
+    Change to Lower Case
+    Change to Upper Case
+    Capitalize current word
+    Increase Indent
+    Decrease Indent
+    Transpose Characters
+    Transpose Words
+    Transpose Lines
+    Comment Block
+    Uncomment Block
+    Line Numbers
+    Ability to split the control horizontally
+
+Added server name to the titlebar.  This makes it easier
+to identify the database server in the task bar and when using 
+alt+tab.  All info still in the status bar
+
+Changed hotkey for History window to Ctrl+I
+
+Modified File Save As to allow you to save a file with a different name,
+even if it hasn't been modified.
+
+Added ability to open a file via the command line.  The filename should include
+the entire path to the file, and if their are any spaces, the filename must 
+be passed in double quotes.
+    Example:  sqltoolz.exe "C:\Program Files\SQLToolz\SQL Toolz.Log"
+
+Changed the comment delimiter written to the log file if date/time logging
+is enabled from "--" to a pair of "/* */".  This is to deal with the 
+block uncommenting features of the Command Window.
+
+v1.39 2002-05-17
+
+Changed use of SYS.SYSUSERPERM to SYS.SYSUSERPERMS in internal
+sql.  'PUBLIC' does not have default select rights on SYSUSERPERM, 
+but does on SYSUSERPERMS.
+
+Turned off debugging switch left on in previous version.
+
+v1.38 2002-05-12
+
+Yes, it has been a long time.  Updated to Visual Basic 6.
+
+Added index ddl extraction.  This also handles unique constraints.
+The index ddl extraction does not do hash size or dbspace.  Maybe
+at a later time.
+
+Added index ddl extraction to the table ddl extraction.  This does
+not do hash sizes or dbspace.  Maybe at a later time.
+
+Added permission extraction to the table ddl extraction.
+
+Added permission extraction to the view ddl extraction.
+
+Added permission extraction to the procedure ddl extraction.
+
+Wrapped misc table, column, view and procedure ddl extraction in quotes.
+This is to deal with reserved words.
+
+Increased the size of the Messages window from 500 lines to 2000.
+
+v1.22 1999-06-13
+
+Various small fixes and testing to enable SQL Toolz to work reliably
+with Adaptive Server Anywhere.
+
+Fixed a problem with long varchar columns.  Retrieves of long varchar
+columns were causing various errors, resulting in no data returned.
+This issue appeared in 5.5.04 after updating ODBC to 3.510.3711.0.  It
+also appeared in ASA 6.0.2.
+
+Changed the objects which fall under 'System Objects' when filtering 
+them out.  Now, any object owned by SYS, dbo, or with a name like 
+'%java.%' will be filtered as a system object.  Most of these issues 
+where discovered when testing with ASA 6.0.02.
+
+Added 'Clear' option to pop-up menu for the Results Grid.  This is a
+quick way to clear out the contents of the Grid.
+
+v1.21 1999-05-02
+
+Added date and time formats for Y2K issues.  SQL Toolz has always
+been Y2K compliant, but there was no way to control the grid display
+format for dates and times.  Now date and time formats can be set
+from the General Tab of the Options Window.
+
+Added a date/time stamp to the log file.  This option is found on the
+Database Tab of the Options Window.
+
+v1.20 1999-03-03
+
+Fixed a Commit problem.  When an error occured during a commit,
+immediately executing a commit after the error would not cause the app
+to generate the error message again.  The error condition would still
+exist, but it would not be displayed.
+
+Added printing of Results Window.
+
+Added logging of Command Window commands.  This option is found on the
+Database Tab of the Options Window.  A toolbar button was also added
+to turn this option on and off.
+
+Removed 'Execute ' and 'Call ' from app for direct execution. These
+should be added to direct.txt if required.  These had been added in
+1.14.  They have been removed so that procedures executed with the
+'Execute' or 'Call' statement can return a result set.  If these are
+added to direct.txt, any procedures called in this manner will NOT
+return a result set.
+
+Added an error trap for error 521 caused by the clipboard being
+unavailable.  5 tries will be made to access the clipboard before
+and error msg is displayed.
+
+Changed text highlighting in the Command Window.  Now, when the
+Command Window looses the focus, any hightlighted text will remain
+highlighted. This makes it much easier to see where text from the
+Quick List or Results Window will be pasted.
+
+Added title bars above the Command Window and the Results Window.
+Since higlighting stays on in the controls, even when they do not have
+focus, I needed a way to indicate the active window. The title bars
+use the same color scheme as the system active window title bar and
+inactive window title bars.
+
+Made Find Window non-modal.
+
+Added Find Next menu option.
+
+Added the ability to disable the splash screen shown at startup.  This
+can speed up load time on slower machines. This option is found on the
+General Tab of the Options window.
+
+Altered Schema Tree for Float, Real, and Double data types. These were
+displayed with a precision and scale, which is incorrect.
+
+Altered DDL generation for Float, Real, and Double data types. These
+data types were generated with a precision and scale, which is
+incorrect.
+
+Altered Schema Tree to show default and check values on user-defined
+types.
+
+Fixed Schema Tree to show Null/Not Null on user-defined types. It
+would show Not Null, but would not show Null.
+
+v1.14 1998-12-27
+
+Changed the Schema Tree to show Null/Not Null on user- defined types
+in Columns.
+
+Added the ability to generate Update and Delete statements from the
+Schema Tree.
+
+Added the ability to extract the DDL of Tables, Views, Procedures, and
+Triggers.
+
+Fixed a problem with stored procedure execution.  If a stored
+procedure that did not return any columns was run as part of a batch,
+an error would occur, and no dialog box would notify the user.  The
+warning would be recorded in the Messages Window, and the batch would
+stop at that point.  If the stored procedure returned any columns,
+even if it returned no rows, the batch would execute correctly.  Now,
+the warning will still be logged in the Messages Window, but the batch
+will continue.
+
+The QuickList hotkey support was enhanced.  The Schema Tree now
+supports ctrl-c and ctrl-v.  The History Window now supports ctrl-c,
+ctrl-v and DEL.
+
+Added the ability to change the style of the font in the Command
+Window and the Results Grid to Regular, Italic, Bold, or Bold Italic.
+
+Re-arranged the tabs on the Options Window to put the Database options
+on the first tab.
+
+Removed 'Grant ', 'Revoke ', and 'Truncate Table ' from direct.txt and
+incorporated them in app.  Added 'Execute ' and 'Call ' to app.
+
+v1.03 1998-12-16
+
+The Options Window was changed to use the common dialog for font
+selection.  Prior to this change, if there were a large number of
+fonts installed on the system, loading the Options Window took quite
+some time, as all available fonts were read from the system.
+
+Corrected incorrect website information.
+
+v1.02 1998-12-13
+
+In the Schema Tree, the "Paste Execute Statement" option was not
+parsing the columns correctly, and was including extra commas. Extra
+parameters were being added to the execute statement.  Now only In or
+InOut parameters are included.
+
+ShowPlan function for SQL Anywhere modified to display the plan before
+starting the execution.  For long queries, the Messages Window was not
+repainting to allow you to see the plan during execution.
+
+Added website information to helpfile.
+
+v1.01 1998-12-08
+
+Cursor Driver added to Options Window.  This was a command line option
+before, but now it has been moved to the options tab. Default is use
+the Server Cursor, but ODBC Cursor is available. When dealing with
+return sets dealing with only one column of Long Varchar, an error
+would be raised if the ODBC Cursor was used (this was the original
+default). This kept the Plan function from working properly.  Also,
+'set rowcount' does not always work correctly on select queries with
+the Server Cursor driver.  ODBC Cursor driver works correctly in this
+condition. See help file for further information.
+
+Second tab added to options window to split General Options and
+Database Options.
+
+Tab key behavior fixed in Command Window.  The Command Window will now
+treat the tab character as a tab instead of loosing focus.
+
+Direct.txt was marked as read only.  This has been changed.
+
+v1.00 1998-12-06 Initial Release
+
+SQL Toolz Copyright 1998-2002 Larry W. Stavinoha
+http://www.stavinoha.com/pub/sqltoolz.htm
